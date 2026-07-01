@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#0c73fe">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0c73fe"/>
+    <g transform="translate(600 400) scale(18)" fill="#ffffff">
+      <path d="M9.25865 9.96807C7.9644 10.1195 6.74344 8.90914 6.53156 7.26464C6.31967 5.62013 7.1971 4.16423 8.49135 4.01279C9.7856 3.86135 11.0066 5.07172 11.2184 6.71623C11.4303 8.36073 10.5529 9.81663 9.25865 9.96807Z" transform="translate(-12 -12)"/>
+      <path d="M17.4684 7.26464C17.2566 8.90914 16.0356 10.1195 14.7413 9.96807C13.4471 9.81663 12.5697 8.36073 12.7816 6.71623C12.9934 5.07172 14.2144 3.86135 15.5087 4.01279C16.8029 4.16423 17.6803 5.62013 17.4684 7.26464Z" transform="translate(-12 -12)"/>
+      <path d="M20.7952 12.2172C20.3088 13.5395 19.1108 14.2903 18.1193 13.8942C17.1279 13.4982 16.7185 12.1051 17.2048 10.7828C17.6912 9.46054 18.8892 8.70968 19.8807 9.10576C20.8721 9.50184 21.2815 10.8949 20.7952 12.2172Z" transform="translate(-12 -12)"/>
+      <path d="M3.20483 12.2172C3.69121 13.5395 4.88922 14.2903 5.88067 13.8942C6.87211 13.4982 7.28155 12.1051 6.79517 10.7828C6.30879 9.46054 5.11078 8.70968 4.11933 9.10576C3.12789 9.50184 2.71845 10.8949 3.20483 12.2172Z" transform="translate(-12 -12)"/>
+      <path d="M16.4537 14.0026L17.2474 15.8552C18.269 18.2397 16.0149 20.7213 13.6598 19.8051C12.5896 19.3888 11.4104 19.3888 10.3402 19.8051C7.98506 20.7213 5.73103 18.2397 6.7526 15.8552L7.54629 14.0026C9.26146 9.99914 14.7385 9.99914 16.4537 14.0026Z" transform="translate(-12 -12)"/>
+    </g>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/aviasales-salo-design-system-df25fa55-9d24-4415-a8ff-1d3e7ac5b509/colors_and_type.css">
+<link rel="stylesheet" href="_ds/aviasales-salo-design-system-df25fa55-9d24-4415-a8ff-1d3e7ac5b509/uploads/Aviasales  Salo Design System/colors_and_type.css">
+<script src="_ds/aviasales-salo-design-system-df25fa55-9d24-4415-a8ff-1d3e7ac5b509/_ds_bundle.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  image-slot { display: block; width: 100%; height: 100%; }
+</style>
+</helmet>
+
+<div ref="{{ setRoot }}" class="light" style="--accent:#0c73fe; min-height:100vh; background:var(--screen_bg); color:var(--text_primary); font-family:var(--font-text);">
+
+  <!-- ===================== STICKY NAV ===================== -->
+  <header style="position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--screen_bg) 86%, transparent); backdrop-filter:saturate(180%) blur(12px); -webkit-backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--line_default);">
+    <div style="max-width: 1040px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-left: 0px; padding-right: 0px; padding-top: 12px; padding-bottom: 12px">
+      <a href="#top" onClick="{{ closeMenu }}" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text_primary); flex:none;">
+        <span style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:12px; background:color-mix(in srgb, var(--accent) 16%, transparent); color:var(--accent);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9.25865 9.96807C7.9644 10.1195 6.74344 8.90914 6.53156 7.26464C6.31967 5.62013 7.1971 4.16423 8.49135 4.01279C9.7856 3.86135 11.0066 5.07172 11.2184 6.71623C11.4303 8.36073 10.5529 9.81663 9.25865 9.96807Z" fill="currentColor"></path><path d="M17.4684 7.26464C17.2566 8.90914 16.0356 10.1195 14.7413 9.96807C13.4471 9.81663 12.5697 8.36073 12.7816 6.71623C12.9934 5.07172 14.2144 3.86135 15.5087 4.01279C16.8029 4.16423 17.6803 5.62013 17.4684 7.26464Z" fill="currentColor"></path><path d="M20.7952 12.2172C20.3088 13.5395 19.1108 14.2903 18.1193 13.8942C17.1279 13.4982 16.7185 12.1051 17.2048 10.7828C17.6912 9.46054 18.8892 8.70968 19.8807 9.10576C20.8721 9.50184 21.2815 10.8949 20.7952 12.2172Z" fill="currentColor"></path><path d="M3.20483 12.2172C3.69121 13.5395 4.88922 14.2903 5.88067 13.8942C6.87211 13.4982 7.28155 12.1051 6.79517 10.7828C6.30879 9.46054 5.11078 8.70968 4.11933 9.10576C3.12789 9.50184 2.71845 10.8949 3.20483 12.2172Z" fill="currentColor"></path><path d="M16.4537 14.0026L17.2474 15.8552C18.269 18.2397 16.0149 20.7213 13.6598 19.8051C12.5896 19.3888 11.4104 19.3888 10.3402 19.8051C7.98506 20.7213 5.73103 18.2397 6.7526 15.8552L7.54629 14.0026C9.26146 9.99914 14.7385 9.99914 16.4537 14.0026Z" fill="currentColor"></path></svg>
+        </span>
+        <span style="font-family:var(--font-brand); font-weight:700; font-size:19px; letter-spacing:-0.01em;">Суши <span style="color:var(--accent);">&amp;</span> Ферги</span>
+      </a>
+
+      <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex; align-items:center; gap:2px;">
+          <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="9">
+            <a href="{{ item.href }}" onClick="{{ closeMenu }}" style="padding:8px 11px; border-radius:10px; font-size:13.5px; font-weight:600; color:var(--text_secondary); text-decoration:none; white-space:nowrap; transition:background .15s, color .15s;" style-hover="background:var(--black_alpha_8); color:var(--text_primary);">{{ item.label }}</a>
+          </sc-for>
+        </nav>
+      </sc-if>
+
+      <sc-if value="{{ showMobileNav }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Меню" style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:12px; border:1px solid var(--line_default); background:var(--card_on_screen); color:var(--icon_dark); cursor:pointer;">
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 19.5L4.5 18L10.5 12L4.5 6L6 4.5L12 10.5L18 4.5L19.5 6L13.5 12L19.5 18L18 19.5L12 13.5L6 19.5Z" fill="currentColor"></path></svg>
+          </sc-if>
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="2" rx="1" fill="currentColor"></rect><rect x="4" y="11" width="16" height="2" rx="1" fill="currentColor"></rect><rect x="4" y="16" width="16" height="2" rx="1" fill="currentColor"></rect></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ drawerOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:1px solid var(--line_default); background:var(--card_on_screen); padding:8px 14px 14px;">
+        <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="9">
+          <a href="{{ item.href }}" onClick="{{ closeMenu }}" style="display:flex; align-items:center; justify-content:space-between; padding:13px 12px; border-radius:12px; font-size:16px; font-weight:600; color:var(--text_primary); text-decoration:none;" style-hover="background:var(--black_alpha_8);">
+            <span>{{ item.label }}</span>
+            <span style="color:var(--text_tertiary);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 4.5L9.5 3L18.5 12L9.5 21L8 19.5L15.5 12L8 4.5Z" fill="currentColor"></path></svg></span>
+          </a>
+        </sc-for>
+      </div>
+    </sc-if>
+  </header>
+
+  <main id="top" style="display:block;">
+
+    <!-- ===================== 01 · ЗНАКОМСТВО ===================== -->
+    <section id="cats" style="scroll-margin-top:72px; background:var(--screen_bg); padding:clamp(40px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <h1 style="margin: 0 0 6px; font-family: var(--font-brand); font-weight: 800; font-size: clamp(34px,7vw,56px); line-height: 1.02; letter-spacing: -0.02em; margin-bottom: 20px">Это Суши и Ферги</h1>
+          
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px;">
+            <!-- Суши -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_xl); overflow:hidden; box-shadow:var(--shadow_xs);">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="cat-sushi" shape="rect" placeholder="Фото Суши" hint-size="100%,280px" style="display:block; width:100%; height:280px; background:var(--ink_50);"></x-import>
+              <div style="padding:20px 22px 22px;">
+                <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:12px;">
+                  <h3 style="margin:0; font-family:var(--font-brand); font-weight:700; font-size:26px;">Суши</h3>
+                </div>
+                <p style="margin:0; font-size:15px; line-height:1.5; color:var(--text_secondary);">Очень социальный и контактный кот. Он любит людей, внимание и общение. Ему нравится быть рядом с человеком, участвовать в том, что происходит дома, и привлекать к себе внимание.</p>
+              </div>
+            </div>
+            <!-- Ферги -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_xl); overflow:hidden; box-shadow:var(--shadow_xs);">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="cat-fergie" shape="rect" placeholder="Фото Ферги" hint-size="100%,280px" style="display:block; width:100%; height:280px; background:var(--ink_50);"></x-import>
+              <div style="padding:20px 22px 22px;">
+                <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:12px;">
+                  <h3 style="margin:0; font-family:var(--font-brand); font-weight:700; font-size:26px;">Ферги</h3>
+                </div>
+                <p style="margin:0; font-size:15px; line-height:1.5; color:var(--text_secondary);">Более скромная и осторожная. Она не очень любит новых людей и первое время может не появляться, прятаться или держаться на расстоянии. Это нормально, ей просто нужно время привыкнуть.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Общие особенности -->
+          <div style="margin-top:20px; display:flex; gap:14px; padding:18px 20px; border-radius:var(--radius_l); background:var(--brand_shading);">
+            <span style="flex:none; color:var(--brand_primary_800); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4.38265 5.4208C3.44683 6.3817 2.98167 7.65235 3.00108 8.91884C3.00036 8.94543 3 8.97234 3 8.99958C3 12.5996 8.66667 18.4996 11.5 20.9996H12.5006C15.3339 18.4996 21.0006 12.5996 21.0006 8.99958C21.0006 8.97234 21.0002 8.94543 20.9995 8.91884C21.0189 7.65235 20.5538 6.3817 19.618 5.4208C17.6273 3.37682 14.3525 3.56305 12.6131 5.81915L12.0003 6.61395L11.3875 5.81915C9.64809 3.56305 6.37327 3.37682 4.38265 5.4208Z" fill="currentColor"></path></svg></span>
+            <div>
+              <div style="font-weight:700; font-size:15px; margin-bottom:3px;">Общие особенности</div>
+              <div style="font-size:15px; line-height:1.45; color:var(--text_primary);">Оба не любят сидеть на руках, но любят внимание и могут просто полежать рядом.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · КОРМЛЕНИЕ ===================== -->
+    <section id="feeding" style="scroll-margin-top:72px; background:var(--screen_gray_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 9V3H6V9H7V3H9V9H10V3H12V9C12 10.6569 10.6569 12 9 12V21H7V12C5.34315 12 4 10.6569 4 9Z" fill="currentColor"></path><path d="M17 3H19V21H17V14H15C14.4477 14 14 13.5523 14 13V6C14 4.34315 15.3431 3 17 3Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Кормление</h2>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
+            <!-- Таблица: чьи миски -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+              <div style="font-weight:700; font-size:17px; margin-bottom:14px;">Кто из какой миски ест</div>
+              <table style="width:100%; border-collapse:collapse;">
+                <thead>
+                  <tr>
+                    <th style="text-align:left; padding:0 0 10px; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--text_tertiary);">Кот</th>
+                    <th style="text-align:left; padding:0 0 10px; font-size:12px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--text_tertiary);">Своя миска</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-top:1px solid var(--line_default);">
+                    <td style="padding:13px 0; font-size:16px; font-weight:600;">Суши</td>
+                    <td style="padding:13px 0; font-size:16px; color:var(--text_secondary);">Керамическая</td>
+                  </tr>
+                  <tr style="border-top:1px solid var(--line_default);">
+                    <td style="padding:13px 0; font-size:16px; font-weight:600;">Ферги</td>
+                    <td style="padding:13px 0; font-size:16px; color:var(--text_secondary);">Пластиковая</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--line_default); font-size:14px; line-height:1.45; color:var(--text_secondary);">При необходимости можно кормить из любой миски.</div>
+            </div>
+
+            <!-- Главные правила -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+              <div style="font-weight:700; font-size:17px; margin-bottom:14px;">Главные правила</div>
+              <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;">
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Суши — 23 г сухого корма, Ферги — 20 г. Весы есть на кухне.</span>
+                </li>
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Ферги может не доедать всю свою еду — это нормально. Главное, чтобы сколько-то ела.</span>
+                </li>
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Кормить раздельно — каждого из своей миски.</span>
+                </li>
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Миски и стаканы мыть только проточной водой, без моющих средств.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Вареная курица -->
+          <div style="margin-top:20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+            <div style="display:flex; gap:14px; align-items:center; padding:18px 22px; background:var(--green_shading);">
+              <span style="flex:none; color:var(--text_positive);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M7.25 9.5L8.75 10.5C8.75 10.5 9.5 10 9.5 9C9.5 8.5 9.3125 8.1875 9.125 7.875C8.9375 7.5625 8.75 7.25 8.75 6.75C8.75 6.25 9.25 6 9.25 6L7.75 5C7.75 5 6.75 5.5 6.75 6.5C6.75 7 6.9375 7.3125 7.125 7.625C7.3125 7.9375 7.5 8.25 7.5 8.75C7.5 9.25 7.25 9.5 7.25 9.5Z" fill="currentColor"></path><path d="M1 16V13H23V15H16V16C16 17.6569 14.6569 19 13 19H4C2.34315 19 1 17.6569 1 16Z" fill="currentColor"></path><path d="M5 11.5L3.5 10.5C3.5 10.5 3.75 10.25 3.75 9.75C3.75 9.25 3.5625 8.9375 3.375 8.625C3.1875 8.3125 3 8 3 7.5C3 6.5 4 6 4 6L5.5 7C5.5 7 5 7.25 5 7.75C5 8.25 5.1875 8.5625 5.375 8.875C5.5625 9.1875 5.75 9.5 5.75 10C5.75 11 5 11.5 5 11.5Z" fill="currentColor"></path><path d="M11 10.5L12.5 11.5C12.5 11.5 13.25 11 13.25 10C13.25 9.5 13.0625 9.1875 12.875 8.875C12.6875 8.5625 12.5 8.25 12.5 7.75C12.5 7.25 13 7 13 7L11.5 6C11.5 6 10.5 6.5 10.5 7.5C10.5 8 10.6875 8.3125 10.875 8.625C11.0625 8.9375 11.25 9.25 11.25 9.75C11.25 10.25 11 10.5 11 10.5Z" fill="currentColor"></path></svg></span>
+            <div>
+              <div style="font-weight:700; font-size:17px;">Вареная курица</div>
+              
+            </div>
+            </div>
+            <div style="padding:18px 22px 6px;">
+              <div style="font-size:15px; line-height:1.5; color:var(--text_secondary);">Это просто лакомство, чтобы порадовать котов, — не обязательная часть рациона. Можно давать раз в неделю, если есть желание, но каждый день или через день готовить её не нужно.</div>
+            </div>
+            <div style="padding:6px 22px 18px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px 24px;">
+              <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--accent); font-weight:800;">·</span><span style="font-size:15px; line-height:1.4;">Варить курицу 15 минут</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--accent); font-weight:800;">·</span><span style="font-size:15px; line-height:1.4;">Без соли, специй и масла</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--accent); font-weight:800;">·</span><span style="font-size:15px; line-height:1.4;">Можно дать вместо одного приёма сухого корма</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--accent); font-weight:800;">·</span><span style="font-size:15px; line-height:1.4;">По желанию — примерно раз в неделю, не чаще</span></div>
+            </div>
+          </div>
+
+          <!-- Если Ферги не ест -->
+          <a href="#faq" onClick="{{ closeMenu }}" style="margin-top:20px; display:flex; gap:14px; align-items:center; padding:16px 20px; border-radius:var(--radius_l); background:var(--yellow_shading); text-decoration:none; color:var(--text_primary);" style-hover="filter:brightness(0.98);">
+            <span style="flex:none; color:var(--text_warning);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88403 6.85993C9.24163 4.59726 9.92043 3.46592 10.7983 3.08215C11.5644 2.74719 12.4356 2.74719 13.2017 3.08215C14.0796 3.46592 14.7584 4.59726 16.116 6.85992L19.6382 12.7304C21.0659 15.1098 21.7797 16.2995 21.6885 17.2784C21.6089 18.132 21.168 18.9107 20.477 19.4181C19.6846 20 18.2971 20 15.5223 20H8.47771C5.70286 20 4.31543 20 3.52298 19.4181C2.832 18.9107 2.39108 18.132 2.31151 17.2784C2.22027 16.2995 2.93409 15.1098 4.36174 12.7304L7.88403 6.85993ZM13 7.99998V13.5H11V7.99998H13ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="currentColor"></path></svg></span>
+            <div style="flex:1;">
+              <div style="font-weight:700; font-size:15px;">Если Ферги не ест</div>
+              <div style="font-size:14px; color:var(--text_secondary);">Что делать — смотрите в разделе «Если что-то пошло не так»</div>
+            </div>
+            <span style="flex:none; color:var(--text_tertiary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 4.5L9.5 3L18.5 12L9.5 21L8 19.5L15.5 12L8 4.5Z" fill="currentColor"></path></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · ВОДА ===================== -->
+    <section id="water" style="scroll-margin-top:72px; background:var(--screen_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3C12 3 5 10.5 5 15.2C5 19.0 8.13 22 12 22C15.87 22 19 19.0 19 15.2C19 10.5 12 3 12 3Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Вода</h2>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+              <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;">
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Наливать только воду из фильтра.</span>
+                </li>
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">Менять воду 2 раза в день — утром и перед сном.</span>
+                </li>
+                <li style="display:flex; gap:12px; align-items:flex-start;">
+                  <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:16px; line-height:1.4;">После использования фильтр убрать в шкаф над вытяжкой. Коты его ненавидят, и если увидят на столе — попытаются перевернуть</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Стаканы -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+              <div style="font-weight:700; font-size:17px; margin-bottom:14px;">Где стоят стаканы</div>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; gap:12px; align-items:center; padding:12px 14px; border-radius:var(--radius_m); background:var(--ink_25);">
+                  <span style="flex:none; color:var(--accent);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.674 14.1013C17.6293 14.163 17.5834 14.2241 17.5364 14.2847L12.5 20.9999H11.5L6.46358 14.2847C6.41659 14.2241 6.37073 14.163 6.326 14.1013L6.25 13.9999H6.25393C4.34905 11.2703 4.61449 7.48602 7.05025 5.05025C9.78392 2.31658 14.2161 2.31658 16.9497 5.05025C19.3855 7.48602 19.651 11.2703 17.7461 13.9999H17.75L17.674 14.1013ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:15px;">Возле телевизора в зале</span>
+                </div>
+                <div style="display:flex; gap:12px; align-items:center; padding:12px 14px; border-radius:var(--radius_m); background:var(--ink_25);">
+                  <span style="flex:none; color:var(--accent);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.674 14.1013C17.6293 14.163 17.5834 14.2241 17.5364 14.2847L12.5 20.9999H11.5L6.46358 14.2847C6.41659 14.2241 6.37073 14.163 6.326 14.1013L6.25 13.9999H6.25393C4.34905 11.2703 4.61449 7.48602 7.05025 5.05025C9.78392 2.31658 14.2161 2.31658 16.9497 5.05025C19.3855 7.48602 19.651 11.2703 17.7461 13.9999H17.75L17.674 14.1013ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="currentColor"></path></svg></span>
+                  <span style="font-size:15px;">В спальне</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section></main></div>
+    
+    
+
+    <!-- ===================== 04 · ЛОТОК ===================== -->
+    <section id="litter" style="scroll-margin-top:72px; background:var(--screen_gray_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13.0002 10H14.0009C15.6577 10 17.0009 11.3431 17.0009 13H7.00089C7.00089 11.3431 8.34403 10 10.0009 10H11.0002V2H13.0002V10Z" fill="currentColor"></path><path d="M6.59728 15L4.50098 21H14.0002V18L14.5443 19.6325C14.8166 20.4491 15.5808 21 16.4417 21H19.5002L17.4044 15H6.59728Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Лоток</h2>
+            </div>
+          </div>
+
+          <!-- Два лотка -->
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-bottom:20px;">
+            <div style="display:flex; gap:12px; align-items:center; padding:16px 18px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--accent) 14%, transparent); color:var(--accent); font-family:var(--font-brand); font-weight:700;">1</span>
+              <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.04em; color:var(--text_tertiary); font-weight:600;">Лоток</div><div style="font-size:16px; font-weight:600;">Большой туалет</div></div>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center; padding:16px 18px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--accent) 14%, transparent); color:var(--accent); font-family:var(--font-brand); font-weight:700;">2</span>
+              <div><div style="font-size:12px; text-transform:uppercase; letter-spacing:0.04em; color:var(--text_tertiary); font-weight:600;">Лоток</div><div style="font-size:16px; font-weight:600;">Большой зал</div></div>
+            </div>
+          </div>
+
+          <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;">
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Убирать минимум один раз в день.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Наполнитель — в маленьком туалете, запас в коридоре.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Совки лежат рядом с лотками.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Пакеты — в плетёной корзине в большой ванной; запас в узком шкафу на кухне.</span></li>
+            </ul>
+          </div>
+
+          <div style="margin-top:20px; display:flex; gap:14px; align-items:center; padding:16px 20px; border-radius:var(--radius_l); background:var(--orange_shading);">
+            <span style="flex:none; color:var(--orange_800);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88403 6.85993C9.24163 4.59726 9.92043 3.46592 10.7983 3.08215C11.5644 2.74719 12.4356 2.74719 13.2017 3.08215C14.0796 3.46592 14.7584 4.59726 16.116 6.85992L19.6382 12.7304C21.0659 15.1098 21.7797 16.2995 21.6885 17.2784C21.6089 18.132 21.168 18.9107 20.477 19.4181C19.6846 20 18.2971 20 15.5223 20H8.47771C5.70286 20 4.31543 20 3.52298 19.4181C2.832 18.9107 2.39108 18.132 2.31151 17.2784C2.22027 16.2995 2.93409 15.1098 4.36174 12.7304L7.88403 6.85993ZM13 7.99998V13.5H11V7.99998H13ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="currentColor"></path></svg></span>
+            <span style="font-size:15px; line-height:1.45;">Наполнитель и содержимое выбрасывать <strong>только в мусор</strong>.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 05 · ИГРЫ И ВНИМАНИЕ ===================== -->
+    <section id="play" style="scroll-margin-top:72px; background:var(--screen_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M17.0172 3.87L16.5617 5.5617L14.87 6.01718V6.9828L16.5617 7.43828L17.0172 9.12998H17.9828L18.4383 7.43828L20.13 6.9828V6.01718L18.4383 5.5617L17.9828 3.87H17.0172Z" fill="currentColor"></path><path d="M9.01718 4.87L7.71317 9.71317L2.87 11.0172V11.9828L7.71317 13.2868L9.01718 18.13H9.9828L11.2868 13.2868L16.13 11.9828V11.0172L11.2868 9.71317L9.9828 4.87H9.01718Z" fill="currentColor"></path><path d="M15.0172 15.87L14.5617 17.5617L12.87 18.0172V18.9828L14.5617 19.4383L15.0172 21.13H15.9828L16.4383 19.4383L18.13 18.9828V18.0172L16.4383 17.5617L15.9828 15.87H15.0172Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Игры и внимание</h2>
+            </div>
+          </div>
+
+          <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); padding:20px 22px;">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;">
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Игрушки — в шкафу в крайнем офисе в боковом отделе сверху. Не держать офис открытым, если там никого нет, потому что кот умеет открывать шкафы.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">С Суши играем маленькими игрушками без ручки — он их грызёт.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">С Ферги играем удочкой — основание перемотано, потому что кот может случайно начать его грызть.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Суши играет очень активно: после 10 минут может часто дышать и высовывать язык. Это нормально — главное не переусердствовать, кот не умеет останавливаться.</span></li>
+              <li style="display:flex; gap:12px; align-items:flex-start;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:16px; line-height:1.4;">Если Суши скучно и он орёт — можно включить ему беговую дорожку на 5-й скорости, он будет бегать. Обычно бегает, если на него смотрят.</span></li>
+            </ul>
+          </div>
+
+          <!-- Индивидуально: Суши и Ферги -->
+          <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px;">
+            <div style="display:flex; gap:12px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+              <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Суши</div><div style="font-size:15px; line-height:1.45; color:var(--text_secondary);">Тискать и держать на руках категорически не любит — тактильный только когда сам захочет. Самое любимое занятие — игра. Если получается играть с ним 2 раза в день, он будет счастлив.</div></div>
+            </div>
+            <div style="display:flex; gap:12px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+              <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Ферги</div><div style="font-size:15px; line-height:1.45; color:var(--text_secondary);">Любит, когда её чешут расчёской (деревянная в ванной и деревянная в зале под телевизором). Если не прячется — можно погладить расчёской или легонько похлопать расчёской по попе.</div></div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:12px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:var(--radius_pill); background:color-mix(in srgb, var(--green_500) 16%, transparent); color:var(--text_positive);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span>
+            <div style="font-size:15px; line-height:1.45;">В коридоре в шкафу лежат 2 пластиковые игрушки-лабиринта. Можно засыпать в каждый отсек по 2–3 бубочки корма — коты будут вытаскивать его и заниматься. Тоже любят такую активность.</div>
+          </div>
+
+          <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
+            <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 20px; border-radius:var(--radius_l); background:var(--red_shading);">
+              <span style="flex:none; color:var(--red_800); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5616 4C9.18495 4 7.985 4.93689 7.65113 6.27239L7.21922 8H3V17C3 18.6569 4.34315 20 6 20H18C19.6569 20 21 18.6569 21 17V8H16.7808L16.3489 6.27239C16.015 4.93689 14.8151 4 13.4384 4H10.5616ZM14.7192 8L14.4086 6.75746C14.2973 6.3123 13.8973 6 13.4384 6H10.5616C10.1027 6 9.7027 6.3123 9.59141 6.75746L9.28078 8H14.7192ZM8.5 16L10 17.5L12 15.5L14 17.5L15.5 16L13.5 14L15.5 12L14 10.5L12 12.5L10 10.5L8.5 12L10.5 14L8.5 16Z" fill="currentColor"></path></svg></span>
+              <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Не играть руками</div><div style="font-size:14px; line-height:1.45; color:var(--text_primary);">Только игрушками — иначе коты привыкают кусать руки.</div></div>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; padding:16px 20px; border-radius:var(--radius_l); background:var(--yellow_shading);">
+              <span style="flex:none; color:var(--text_warning); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V9H19V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9H7ZM9 9V8C9 6.34315 10.3431 5 12 5C13.6569 5 15 6.34315 15 8V9H9ZM14 15C14 16.1046 13.1046 17 12 17C10.8954 17 10 16.1046 10 15C10 13.8954 10.8954 13 12 13C13.1046 13 14 13.8954 14 15Z" fill="currentColor"></path></svg></span>
+              <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Закрывать шкафы и офисы (если вы не там)</div><div style="font-size:14px; line-height:1.45; color:var(--text_primary);">Если Суши попадёт внутрь — он может открыть шкаф.</div></div>
+            </div>
+          </div>
+
+          <!-- TODO blocks -->
+          <div style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;">
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 06 · БЕЗОПАСНОСТЬ ===================== -->
+    <section id="safety" style="scroll-margin-top:72px; background:var(--screen_gray_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M19 6H18.9051C16.5979 6 14.4019 5.04446 12.8314 3.37434C12.6144 3.14354 12.3168 3 12 3C11.6832 3 11.3856 3.14354 11.1686 3.37434C9.59813 5.04446 7.40207 6 5.09487 6H5V10.0912C5 13.8168 6.73045 17.3311 9.68347 19.6027L11.5 21H12.5L14.3165 19.6027C17.2696 17.3311 19 13.8168 19 10.0912V6Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Безопасность</h2>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px;">
+            <div style="display:flex; gap:14px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; color:var(--accent); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10.3715 13.6285C9.20913 12.4661 8.45176 11.4191 7.98219 10.2255L10.1543 8.05342C9.78504 7.5516 8.22027 4.51734 7.5 3H6.54895C4.86752 4.83101 4.00007 6.41371 4 7.6914C4.00363 10.5034 5.41703 13.4528 7.98206 16.0179C10.5471 18.5829 13.4966 19.9964 16.3086 20C17.5876 20 19.1693 19.1325 21 17.4511V16.5C19.4829 15.7798 16.4485 14.215 15.9466 13.8457L13.7745 16.0178C12.5808 15.5482 11.5338 14.7908 10.3715 13.6285Z" fill="currentColor"></path></svg></span>
+              <span style="font-size:15px; line-height:1.45;">Следить за котами при входе и выходе из квартиры.</span>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; color:var(--accent); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.8983 4.866C9.59319 2.40274 14.4068 2.40274 18.1017 4.866L18.4014 5.06579L20 4.00005H21V21.0001H3V4.00005H4L5.59861 5.06579L5.8983 4.866ZM7 6.53523V10.0001H11V5.07418C9.6003 5.23041 8.22927 5.71572 7.0077 6.5301L7 6.53523ZM7 12.0001V19.0001H11V12.0001H7ZM16.9923 6.5301L17 6.53523V10.0001H13V5.07418C14.3997 5.23041 15.7707 5.71572 16.9923 6.5301ZM13 12.0001H17V19.0001H13V12.0001Z" fill="currentColor"></path></svg></span>
+              <span style="font-size:15px; line-height:1.45;">Закрывать окна перед уходом.</span>
+            </div>
+            <div style="display:flex; gap:14px; align-items:flex-start; padding:18px 20px; background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l);">
+              <span style="flex:none; color:var(--accent); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.5265 19 18.4439 16.3923 18.9291 13H20.9451C20.4476 17.5 16.6326 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.3051 3 16.4077 3.86656 18 5.29168V3H20V8L19 9H14V7H16.899C15.6364 5.76281 13.9073 5 12 5Z" fill="currentColor"></path></svg></span>
+              <span style="font-size:15px; line-height:1.45;">После использования плиты выключать рубильник.</span>
+            </div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:14px; align-items:flex-start; padding:18px 20px; border-radius:var(--radius_l); background:var(--orange_shading);">
+            <span style="flex:none; color:var(--orange_800); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88403 6.85993C9.24163 4.59726 9.92043 3.46592 10.7983 3.08215C11.5644 2.74719 12.4356 2.74719 13.2017 3.08215C14.0796 3.46592 14.7584 4.59726 16.116 6.85992L19.6382 12.7304C21.0659 15.1098 21.7797 16.2995 21.6885 17.2784C21.6089 18.132 21.168 18.9107 20.477 19.4181C19.6846 20 18.2971 20 15.5223 20H8.47771C5.70286 20 4.31543 20 3.52298 19.4181C2.832 18.9107 2.39108 18.132 2.31151 17.2784C2.22027 16.2995 2.93409 15.1098 4.36174 12.7304L7.88403 6.85993ZM13 7.99998V13.5H11V7.99998H13ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="currentColor"></path></svg></span>
+            <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Не оставляйте мелочи на виду</div><div style="font-size:15px; line-height:1.45;">Провода, зарядки, шнурки, нитки, верёвочки, ватные палочки и любые мелкие предметы.</div></div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:14px; align-items:flex-start; padding:18px 20px; border-radius:var(--radius_l); background:var(--red_shading);">
+            <span style="flex:none; color:var(--red_800); margin-top:1px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5616 4C9.18495 4 7.985 4.93689 7.65113 6.27239L7.21922 8H3V17C3 18.6569 4.34315 20 6 20H18C19.6569 20 21 18.6569 21 17V8H16.7808L16.3489 6.27239C16.015 4.93689 14.8151 4 13.4384 4H10.5616ZM14.7192 8L14.4086 6.75746C14.2973 6.3123 13.8973 6 13.4384 6H10.5616C10.1027 6 9.7027 6.3123 9.59141 6.75746L9.28078 8H14.7192ZM8.5 16L10 17.5L12 15.5L14 17.5L15.5 16L13.5 14L15.5 12L14 10.5L12 12.5L10 10.5L8.5 12L10.5 14L8.5 16Z" fill="currentColor"></path></svg></span>
+            <div><div style="font-weight:700; font-size:15px; margin-bottom:3px;">Если коты дерутся</div><div style="font-size:15px; line-height:1.45;">Не разнимать руками — хлопнуть в ладоши. Ферги может громко верещать, это нормально.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 07 · ЕСЛИ ЧТО-ТО ПОШЛО НЕ ТАК ===================== -->
+    <section id="faq" style="scroll-margin-top:72px; background:var(--screen_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.7839 3.51899 15.4465 4.41421 16.8452L3 20L4.00012 21L7.15483 19.5858C8.55351 20.481 10.2161 21 12 21ZM13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16ZM14.1404 7.35501C14.8078 7.80872 15.25 8.54358 15.25 9.49976C15.25 10.267 14.8952 10.8 14.4705 11.1822C14.1979 11.4275 13.8365 11.654 13.5505 11.8333C13.4531 11.8943 13.3645 11.9498 13.291 11.9988C12.9406 12.2324 12.7462 12.4176 12.6497 12.6266C12.578 12.782 12.5212 13.0394 12.6348 13.4999H11.1071C11.023 12.9398 11.0829 12.4418 11.2878 11.998C11.5663 11.3944 12.0594 11.0171 12.459 10.7507C12.6166 10.6457 12.7539 10.5599 12.8768 10.4831C13.1132 10.3354 13.2962 10.2211 13.467 10.0673C13.6673 9.88706 13.75 9.73248 13.75 9.49976C13.75 9.05651 13.5672 8.77916 13.2971 8.59547C12.9993 8.39305 12.5541 8.28331 12.0597 8.32281C11.0398 8.40429 10.25 9.03284 10.25 9.99976H8.75C8.75 7.96669 10.4602 6.94581 11.9403 6.82757C12.6959 6.76721 13.5007 6.92004 14.1404 7.35501Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Если что-то пошло не так</h2>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:10px;">
+
+            <!-- Если Ферги не ест -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <button onClick="{{ faqA.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:var(--font-text); color:var(--text_primary);">
+                <span style="font-size:16px; font-weight:600;">{{ faqA.q }}</span>
+                <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:var(--radius_pill); background:var(--ink_50); color:var(--text_secondary);"><sc-if value="{{ faqA.closed }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19.5 8L21 9.5L12.5 18H11.5L3 9.5L4.5 8L12 15.5L19.5 8Z" fill="currentColor"></path></svg></sc-if><sc-if value="{{ faqA.open }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.5 16L3 14.5L11.5 6H12.5L21 14.5L19.5 16L12 8.5L4.5 16Z" fill="currentColor"></path></svg></sc-if></span>
+              </button>
+              <sc-if value="{{ faqA.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 18px; font-size:15px; line-height:1.55; color:var(--text_secondary);">
+                  <p style="margin:0 0 10px;">Оставить Ферги в спальне с миской, а Суши временно закрыть в зале.</p>
+                  <p style="margin:0 0 6px;">Можно попробовать поставить миску:</p>
+                  <ul style="margin:0 0 10px; padding-left:20px;"><li style="margin-bottom:4px;">на подоконник в спальне;</li><li style="margin-bottom:4px;">на кровать;</li><li>в другое спокойное место.</li></ul>
+                  <p style="margin:0;">Если она не поела, убрать миску и попробовать снова через 10 минут.</p>
+                </div>
+              </sc-if>
+            </div>
+
+            <!-- Если кота вытошнило -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <button onClick="{{ faqB.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:var(--font-text); color:var(--text_primary);">
+                <span style="font-size:16px; font-weight:600;">{{ faqB.q }}</span>
+                <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:var(--radius_pill); background:var(--ink_50); color:var(--text_secondary);"><sc-if value="{{ faqB.closed }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19.5 8L21 9.5L12.5 18H11.5L3 9.5L4.5 8L12 15.5L19.5 8Z" fill="currentColor"></path></svg></sc-if><sc-if value="{{ faqB.open }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.5 16L3 14.5L11.5 6H12.5L21 14.5L19.5 16L12 8.5L4.5 16Z" fill="currentColor"></path></svg></sc-if></span>
+              </button>
+              <sc-if value="{{ faqB.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 18px; font-size:15px; line-height:1.55; color:var(--text_secondary);">
+                  <p style="margin:0 0 10px;">Убрать влажными салфетками.</p>
+                  <p style="margin:0 0 6px;">Можно дать MultiFlora:</p>
+                  <ul style="margin:0 0 10px; padding-left:20px;"><li style="margin-bottom:4px;">один пакетик на одного кота;</li><li>один раз в день.</li></ul>
+                  <p style="margin:0;">Также можно дать malt paste — примерно 1 см.</p>
+                </div>
+              </sc-if>
+            </div>
+
+            <!-- Если кот написал на пол -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <button onClick="{{ faqC.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:var(--font-text); color:var(--text_primary);">
+                <span style="font-size:16px; font-weight:600;">{{ faqC.q }}</span>
+                <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:var(--radius_pill); background:var(--ink_50); color:var(--text_secondary);"><sc-if value="{{ faqC.closed }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19.5 8L21 9.5L12.5 18H11.5L3 9.5L4.5 8L12 15.5L19.5 8Z" fill="currentColor"></path></svg></sc-if><sc-if value="{{ faqC.open }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.5 16L3 14.5L11.5 6H12.5L21 14.5L19.5 16L12 8.5L4.5 16Z" fill="currentColor"></path></svg></sc-if></span>
+              </button>
+              <sc-if value="{{ faqC.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 18px; font-size:15px; line-height:1.55; color:var(--text_secondary);">
+                  <p style="margin:0 0 10px;">Убрать влажными салфетками.</p>
+                  <p style="margin:0 0 10px;">Если пахнет, можно попшикать multipurpose cleaner и протереть влажной тряпкой три раза, чтобы убрать следы химии.</p>
+                  <p style="margin:0 0 10px;"><strong style="color:var(--text_primary);">Важно:</strong> химию нужно хорошо убрать — она может попасть котам на лапки, а потом они её слижут.</p>
+                  <p style="margin:0;">После уборки можно закрыть комнату и проверить через 10 минут.</p>
+                </div>
+              </sc-if>
+            </div>
+
+            <!-- Если стул мягкий -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <button onClick="{{ faqD.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:var(--font-text); color:var(--text_primary);">
+                <span style="font-size:16px; font-weight:600;">{{ faqD.q }}</span>
+                <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:var(--radius_pill); background:var(--ink_50); color:var(--text_secondary);"><sc-if value="{{ faqD.closed }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19.5 8L21 9.5L12.5 18H11.5L3 9.5L4.5 8L12 15.5L19.5 8Z" fill="currentColor"></path></svg></sc-if><sc-if value="{{ faqD.open }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.5 16L3 14.5L11.5 6H12.5L21 14.5L19.5 16L12 8.5L4.5 16Z" fill="currentColor"></path></svg></sc-if></span>
+              </button>
+              <sc-if value="{{ faqD.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 18px; font-size:15px; line-height:1.55; color:var(--text_secondary);">
+                  <p style="margin:0 0 6px;">Дать MultiFlora:</p>
+                  <ul style="margin:0 0 10px; padding-left:20px;"><li style="margin-bottom:4px;">один пакетик;</li><li>один раз в день.</li></ul>
+                  <p style="margin:0 0 6px;">Как давать:</p>
+                  <ul style="margin:0; padding-left:20px;"><li style="margin-bottom:4px;">Ферги — только в сухом виде, высыпать на корм;</li><li style="margin-bottom:4px;">Суши — можно развести с тремя столовыми ложками воды из фильтра;</li><li>Суши также можно дать как Ферги — просто добавить в корм.</li></ul>
+                </div>
+              </sc-if>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 08 · ЧТО НОРМАЛЬНО ===================== -->
+    <section id="norm" style="scroll-margin-top:72px; background:var(--screen_gray_bg); padding:clamp(44px,7vw,72px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="display:flex; align-items:center; gap:16px; margin-bottom:clamp(24px,4vw,36px);">
+            <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:rgba(12,115,254,0.16); color:#0C73FE;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13 11.5V16.5H11V11.5H13Z" fill="currentColor"></path><path d="M12 10C12.6904 10 13.25 9.44036 13.25 8.75C13.25 8.05964 12.6904 7.5 12 7.5C11.3096 7.5 10.75 8.05964 10.75 8.75C10.75 9.44036 11.3096 10 12 10Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5Z" fill="currentColor"></path></svg>
+            </span>
+            <div>
+              <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em;">Что нормально, а что нет</h2>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
+            <!-- Это нормально -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <div style="display:flex; gap:10px; align-items:center; padding:16px 20px; background:var(--green_shading); color:var(--text_positive);">
+                <span style="font-weight:700; font-size:17px; color:var(--text_primary);">Это нормально</span>
+              </div>
+              <div style="padding:18px 20px; display:flex; flex-direction:column; gap:12px;">
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Суши громко мяукает в коридоре, когда хочет играть или внимания.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Ферги может не есть сразу.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Ферги может выбирать другое место для еды.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Ферги может прятаться первое время.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Коты могут пытаться пить из чужих стаканов.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Коты не сидят на руках.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; color:var(--text_positive); margin-top:2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 18H9L2.5 11.5L4 10L9.5 15.5L20 5L21.5 6.5L10 18Z" fill="currentColor"></path></svg></span><span style="font-size:15px; line-height:1.45;">Коты могут лежать рядом, но не обязательно будут активно контактировать.</span></div>
+              </div>
+            </div>
+            <!-- На что обратить внимание -->
+            <div style="background:var(--card_on_screen); border:1px solid var(--line_default); border-radius:var(--radius_l); overflow:hidden;">
+              <div style="display:flex; gap:10px; align-items:center; padding:16px 20px; background:var(--orange_shading); color:var(--orange_800);">
+                <span style="font-weight:700; font-size:17px; color:var(--text_primary);">На что обратить внимание</span>
+              </div>
+              <div style="padding:18px 20px; display:flex; flex-direction:column; gap:12px;">
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот совсем не ест.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот ведёт себя необычно вяло.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот постоянно прячется и не выходит.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот что-то проглотил.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот грыз провода или опасные предметы.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кто-то написал на пол.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Какашки стали мягкими.</span></div>
+                <div style="display:flex; gap:10px; align-items:flex-start;"><span style="flex:none; width:7px; height:7px; border-radius:999px; background:var(--orange_500); margin-top:7px;"></span><span style="font-size:15px; line-height:1.45;">Кот выглядит больным или очень странно себя ведёт.</span></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 09 · ЭКСТРЕННЫЕ СИТУАЦИИ ===================== -->
+    <section id="sos" style="scroll-margin-top:72px; background:var(--screen_bg); padding:clamp(44px,7vw,80px) 20px;">
+      <div data-reveal="">
+        <div style="max-width:1040px; margin:0 auto;">
+          <div style="position:relative; border-radius:var(--radius_2xl); overflow:hidden; border:1px solid var(--red_300); background:var(--red_50);">
+            <div style="padding:clamp(24px,4vw,36px);">
+              <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px">
+                <span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:54px; height:54px; border-radius:16px; background:var(--red_500); color:#fff;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.88403 6.85993C9.24163 4.59726 9.92043 3.46592 10.7983 3.08215C11.5644 2.74719 12.4356 2.74719 13.2017 3.08215C14.0796 3.46592 14.7584 4.59726 16.116 6.85992L19.6382 12.7304C21.0659 15.1098 21.7797 16.2995 21.6885 17.2784C21.6089 18.132 21.168 18.9107 20.477 19.4181C19.6846 20 18.2971 20 15.5223 20H8.47771C5.70286 20 4.31543 20 3.52298 19.4181C2.832 18.9107 2.39108 18.132 2.31151 17.2784C2.22027 16.2995 2.93409 15.1098 4.36174 12.7304L7.88403 6.85993ZM13 7.99998V13.5H11V7.99998H13ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="currentColor"></path></svg>
+                </span>
+                <div>
+                  <h2 style="margin:0; font-weight:700; font-size:clamp(26px,4.4vw,38px); letter-spacing:-0.01em; color:var(--text_primary);">Экстренные ситуации</h2>
+                </div>
+              </div>
+              <div style="margin-top:22px; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;">
+                <div style="background:var(--card_on_screen); border-radius:var(--radius_l); padding:18px 20px;">
+                  <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px; color:var(--red_800);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.674 14.1013C17.6293 14.163 17.5834 14.2241 17.5364 14.2847L12.5 20.9999H11.5L6.46358 14.2847C6.41659 14.2241 6.37073 14.163 6.326 14.1013L6.25 13.9999H6.25393C4.34905 11.2703 4.61449 7.48602 7.05025 5.05025C9.78392 2.31658 14.2161 2.31658 16.9497 5.05025C19.3855 7.48602 19.651 11.2703 17.7461 13.9999H17.75L17.674 14.1013ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="currentColor"></path></svg><span style="font-weight:700; font-size:15px; color:var(--text_primary);">Куда ехать</span></div>
+                  <div style="font-size:15px; line-height:1.45; color:var(--text_secondary); margin-bottom:12px;">В клинику 24/7, где наблюдаются коты. Доехать на такси.</div>
+                  <a href="https://maps.app.goo.gl/WBbxaLH8hyepFLcp6" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; padding:9px 14px; border-radius:var(--radius_m); background:var(--brand_primary_500); color:#fff; font-size:14px; font-weight:600; text-decoration:none;" style-hover="background:var(--brand_primary_800);"><span style="flex:none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.674 14.1013C17.6293 14.163 17.5834 14.2241 17.5364 14.2847L12.5 20.9999H11.5L6.46358 14.2847C6.41659 14.2241 6.37073 14.163 6.326 14.1013L6.25 13.9999H6.25393C4.34905 11.2703 4.61449 7.48602 7.05025 5.05025C9.78392 2.31658 14.2161 2.31658 16.9497 5.05025C19.3855 7.48602 19.651 11.2703 17.7461 13.9999H17.75L17.674 14.1013ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="currentColor"></path></svg></span>Клиника на карте</a>
+                </div>
+                <div style="background:var(--card_on_screen); border-radius:var(--radius_l); padding:18px 20px;">
+                  <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px; color:var(--accent);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.8983 4.866C9.59319 2.40274 14.4068 2.40274 18.1017 4.866L18.4014 5.06579L20 4.00005H21V21.0001H3V4.00005H4L5.59861 5.06579L5.8983 4.866ZM7 6.53523V10.0001H11V5.07418C9.6003 5.23041 8.22927 5.71572 7.0077 6.5301L7 6.53523ZM7 12.0001V19.0001H11V12.0001H7ZM16.9923 6.5301L17 6.53523V10.0001H13V5.07418C14.3997 5.23041 15.7707 5.71572 16.9923 6.5301ZM13 12.0001H17V19.0001H13V12.0001Z" fill="currentColor"></path></svg><span style="font-weight:700; font-size:15px; color:var(--text_primary);">Что сказать</span></div>
+                  <div style="font-size:15px; line-height:1.45; color:var(--text_secondary); margin-bottom:10px;">Назвать имена котов — <strong style="color: var(--text_primary);">Sushi and Fergie</strong> — и имя <b style="color: rgb(12, 19, 29);">Nastassia</b>. Документы не требуются — только кот и его проблема.</div>
+                  
+                </div>
+                <div style="background:var(--card_on_screen); border-radius:var(--radius_l); padding:18px 20px;">
+                  <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px; color:var(--accent);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.69278 5H9C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5H16.3072C17.7775 5 19.0311 6.06554 19.268 7.5166L19.955 11.7244C20.5948 12.2746 21 13.09 21 14V21H18V19H6V21H3V14C3 13.09 3.40519 12.2746 4.04499 11.7244L4.73198 7.5166C4.96889 6.06554 6.22251 5 7.69278 5ZM6.58819 8.80834L6 12H18L17.4118 8.80835C17.2521 7.94166 16.544 7.27799 15.6667 7.19487C12.9241 6.93505 11.0759 6.93504 8.3333 7.19487C7.45595 7.27799 6.74791 7.94165 6.58819 8.80834ZM6.5 17C7.32843 17 8 16.3284 8 15.5C8 14.6716 7.32843 14 6.5 14C5.67157 14 5 14.6716 5 15.5C5 16.3284 5.67157 17 6.5 17ZM17.5 17C18.3284 17 19 16.3284 19 15.5C19 14.6716 18.3284 14 17.5 14C16.6716 14 16 14.6716 16 15.5C16 16.3284 16.6716 17 17.5 17Z" fill="currentColor"></path></svg><span style="font-weight:700; font-size:15px; color:var(--text_primary);">Переноски</span></div>
+                  <div style="font-size:15px; line-height:1.45; color:var(--text_secondary);">Во втором офисе сверху на шкафу. Для Суши красная, там есть блокировка замков.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer style="background:var(--screen_gray_bg); border-top:1px solid var(--line_default); padding:32px 20px;">
+      <div style="max-width:1040px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:10px; background:color-mix(in srgb, var(--accent) 16%, transparent); color:var(--accent);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9.25865 9.96807C7.9644 10.1195 6.74344 8.90914 6.53156 7.26464C6.31967 5.62013 7.1971 4.16423 8.49135 4.01279C9.7856 3.86135 11.0066 5.07172 11.2184 6.71623C11.4303 8.36073 10.5529 9.81663 9.25865 9.96807Z" fill="currentColor"></path><path d="M17.4684 7.26464C17.2566 8.90914 16.0356 10.1195 14.7413 9.96807C13.4471 9.81663 12.5697 8.36073 12.7816 6.71623C12.9934 5.07172 14.2144 3.86135 15.5087 4.01279C16.8029 4.16423 17.6803 5.62013 17.4684 7.26464Z" fill="currentColor"></path><path d="M16.4537 14.0026L17.2474 15.8552C18.269 18.2397 16.0149 20.7213 13.6598 19.8051C12.5896 19.3888 11.4104 19.3888 10.3402 19.8051C7.98506 20.7213 5.73103 18.2397 6.7526 15.8552L7.54629 14.0026C9.26146 9.99914 14.7385 9.99914 16.4537 14.0026Z" fill="currentColor"></path></svg></span>
+          <span style="font-size:14px; color:var(--text_secondary);">Памятка по уходу за Суши и Ферги</span>
+        </div>
+        <a href="#top" onClick="{{ closeMenu }}" style="font-size:14px; font-weight:600; color:var(--text_link); text-decoration:none;">Наверх ↑</a>
+      </div>
+    </footer>
+
+  
+
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;darkMode&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Тема&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#0c73fe&quot;,&quot;options&quot;:[&quot;#0c73fe&quot;,&quot;#8555f2&quot;,&quot;#d33881&quot;,&quot;#34a84c&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Тема&quot;}}">
+class Component extends DCLogic {
+  state = { isMobile: false, menuOpen: false, faqOpen: {} };
+
+  componentDidMount() {
+    this.mq = window.matchMedia('(max-width: 1000px)');
+    this.onMq = (e) => this.setState({ isMobile: e.matches, menuOpen: false });
+    this.setState({ isMobile: this.mq.matches });
+    if (this.mq.addEventListener) this.mq.addEventListener('change', this.onMq);
+    else this.mq.addListener(this.onMq);
+    this.applyTheme();
+    // run reveal setup after first paint of content
+    requestAnimationFrame(() => { this.sizeSlots(); this.setupReveal(); });
+  }
+
+  componentDidUpdate() {
+    this.applyTheme();
+  }
+
+  componentWillUnmount() {
+    if (this.mq) {
+      if (this.mq.removeEventListener) this.mq.removeEventListener('change', this.onMq);
+      else this.mq.removeListener(this.onMq);
+    }
+    if (this.io) this.io.disconnect();
+  }
+
+  applyTheme() {
+    const root = this.rootEl;
+    if (!root) return;
+    const dark = !!this.props.darkMode;
+    root.classList.toggle('night', dark);
+    root.classList.toggle('light', !dark);
+    root.style.setProperty('--accent', this.props.accent || '#0c73fe');
+  }
+
+  sizeSlots() {
+    const root = this.rootEl;
+    if (!root) return;
+    root.querySelectorAll('image-slot').forEach((el) => {
+      el.style.display = 'block';
+      el.style.width = '100%';
+      el.style.height = '100%';
+    });
+  }
+
+  setupReveal() {
+    const root = this.rootEl;
+    if (!root || this.io) return;
+    const els = Array.from(root.querySelectorAll('[data-reveal]'));
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity .55s cubic-bezier(.2,.7,.2,1), transform .55s cubic-bezier(.2,.7,.2,1)';
+      el.style.willChange = 'opacity, transform';
+    });
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'none';
+          this.io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => this.io.observe(el));
+  }
+
+  renderVals() {
+    const isMobile = this.state.isMobile;
+    const menuOpen = this.state.menuOpen;
+    const navItems = [
+      { href: '#feeding', label: 'Кормление' },
+      { href: '#water', label: 'Вода' },
+      { href: '#litter', label: 'Лоток' },
+      { href: '#play', label: 'Игры' },
+      { href: '#safety', label: 'Безопасность' },
+      { href: '#faq', label: 'Если что-то не так' },
+      { href: '#norm', label: 'Норма' },
+      { href: '#sos', label: 'Экстренно' },
+    ];
+    const questions = [
+      'Если Ферги не ест',
+      'Если кота вытошнило',
+      'Если кот написал на пол',
+      'Если стул мягкий',
+    ];
+    const faqItems = questions.map((q, i) => ({
+      q,
+      open: !!this.state.faqOpen[i],
+      closed: !this.state.faqOpen[i],
+      sign: this.state.faqOpen[i] ? '\u2212' : '+',
+      toggle: () => this.setState((s) => ({ faqOpen: Object.assign({}, s.faqOpen, { [i]: !s.faqOpen[i] }) })),
+    }));
+    return {
+      setRoot: (el) => { this.rootEl = el; },
+      isMobile,
+      showDesktopNav: !isMobile,
+      showMobileNav: isMobile,
+      menuOpen,
+      menuClosed: !menuOpen,
+      drawerOpen: isMobile && menuOpen,
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navItems,
+      faqItems,
+      faqA: faqItems[0],
+      faqB: faqItems[1],
+      faqC: faqItems[2],
+      faqD: faqItems[3],
+      preventDefault: (e) => { e.preventDefault(); },
+    };
+  }
+}
+</script>
+</body>
+</html>

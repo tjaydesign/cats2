@@ -1,0 +1,495 @@
+/* ─────────────────────────────────────────────────────────────
+   Aviasales / Salo Design System — colors_and_type.css
+   Ported 1:1 from web frontend/packages/ui/src/styles/
+   Supports light (default) and dark (.night) modes.
+   ───────────────────────────────────────────────────────────── */
+
+/* ============ FONTS ============ */
+
+/* Stapel — brand display face, used for big hero titles, pricing, logos,
+   "wow" numbers. Cyrillic + latin. 2 cuts + a Narrow Extra Bold. */
+
+@font-face {
+  font-family: 'Stapel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Stapel-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Stapel';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Stapel-Medium.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Stapel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Stapel-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Stapel';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/Stapel-ExtraBold.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Stapel Narrow';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/Stapel-NarrowExtraBold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Stapel Narrow';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./fonts/Stapel-NarrowExtraBoldItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Inter — default UI face (web). Variable font w/ latin + cyrillic subsets.
+   On Apple platforms falls back to SF Pro Text via the stack. */
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('./fonts/inter_latin_wght.woff2') format('woff2-variations');
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+      U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('./fonts/inter_cyrillic_wght.woff2') format('woff2-variations');
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+}
+/* static fallbacks */
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 400;
+  src: url('./fonts/inter_latin_400.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+FEFF;
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 600;
+  src: url('./fonts/inter_latin_600.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+FEFF;
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 700;
+  src: url('./fonts/inter_latin_700.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+FEFF;
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 400;
+  src: url('./fonts/inter_cyrillic_400.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 600;
+  src: url('./fonts/inter_cyrillic_600.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 700;
+  src: url('./fonts/inter_cyrillic_700.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* Roboto — Android UI face. Self-hosted (was system-delivered before). */
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 400;
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype'); font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 500;
+  src: url('./fonts/Roboto-Medium.ttf') format('truetype'); font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 600;
+  src: url('./fonts/Roboto-SemiBold.ttf') format('truetype'); font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 700;
+  src: url('./fonts/Roboto-Bold.ttf') format('truetype'); font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto'; font-style: normal; font-weight: 800;
+  src: url('./fonts/Roboto-ExtraBold.ttf') format('truetype'); font-display: swap;
+}
+
+/* SF Pro Display — iOS UI face. Self-hosted (was system-delivered before). */
+@font-face {
+  font-family: 'SF Pro Display'; font-style: normal; font-weight: 400;
+  src: url('./fonts/SF-Pro-Display-Regular.otf') format('opentype'); font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Display'; font-style: normal; font-weight: 600;
+  src: url('./fonts/SF-Pro-Display-Semibold.otf') format('opentype'); font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Display'; font-style: normal; font-weight: 700;
+  src: url('./fonts/SF-Pro-Display-Bold.otf') format('opentype'); font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Display'; font-style: normal; font-weight: 900;
+  src: url('./fonts/SF-Pro-Display-Heavy.otf') format('opentype'); font-display: swap;
+}
+
+
+/* ============ TOKENS ============ */
+
+:root,
+.light {
+  /* ── Neutrals ── */
+  --black: #000;
+  --white: #fff;
+
+  /* Black alphas (for scrims, overlays) */
+  --black_alpha_95: rgba(12, 19, 29, 0.95);
+  --black_alpha_72: rgba(26, 32, 40, 0.72);
+  --black_alpha_40: rgba(16, 23, 34, 0.4);
+  --black_alpha_24: rgba(12, 20, 32, 0.24);
+  --black_alpha_16: rgba(13, 25, 43, 0.16);
+  --black_alpha_12: rgba(17, 33, 56, 0.12);
+  --black_alpha_8:  rgba(67, 83, 106, 0.08);
+  --black_alpha_4:  rgba(76, 84, 97, 0.04);
+
+  /* White alphas (on bright) */
+  --white_alpha_72: rgba(255, 255, 255, 0.72);
+  --white_alpha_60: rgba(255, 255, 255, 0.6);
+  --white_alpha_40: rgba(255, 255, 255, 0.4);
+  --white_alpha_24: rgba(255, 255, 255, 0.24);
+  --white_alpha_16: rgba(255, 255, 255, 0.16);
+  --white_alpha_12: rgba(255, 255, 255, 0.12);
+  --white_alpha_8:  rgba(255, 255, 255, 0.08);
+  --white_alpha_4:  rgba(255, 255, 255, 0.04);
+
+  /* Ink — greys for text, placeholders, dividers, soft fills.
+     800 = primary text; 500 = secondary; 400 = tertiary; 150 = divider; 50/25 = soft backgrounds. */
+  --ink_800: #0c131d;
+  --ink_500: #5a6472;
+  --ink_400: #848f9d;
+  --ink_300: #bdc5d0;
+  --ink_150: #dbdfe5;
+  --ink_50:  #f2f4f5;
+  --ink_25:  #f7f8f9;
+
+  /* Graphite — darks for night mode surfaces. */
+  --graphite_900: #141414;
+  --graphite_800: #1d1e20;
+  --graphite_700: #242528;
+  --graphite_600: #2e3035;
+  --graphite_500: #3d3f43;
+  --graphite_400: #5a5c5f;
+  --graphite_300: #8a8f94;
+  --graphite_50:  #eeefef;
+
+  /* ── Brand ── */
+  /* Aviasales Blue — the star of the system. 500 is the hero. */
+  --brand_primary_1000: #033577;
+  --brand_primary_800:  #0a64dd;
+  --brand_primary_500:  #0c73fe; /* ★ hero brand blue */
+  --brand_primary_300:  #99c4ff;
+  --brand_primary_200:  #a3d3ff;
+  --brand_primary_100:  #c9dfff;
+  --brand_primary_50:   #e0edff;
+  --brand_primary_25:   #edf4ff;
+
+  /* ── Semantics ── */
+  /* Green / positive */
+  --green_1000: #0f3317;
+  --green_800:  #0e7e25;
+  --green_500:  #34a84c;
+  --green_300:  #89d99a;
+  --green_100:  #c4eccc;
+  --green_50:   #def4e3;
+
+  /* Red / danger */
+  --red_1000: #860f1b;
+  --red_800:  #c12c3c;
+  --red_500:  #d83b4c;
+  --red_300:  #ffb8bf;
+  --red_100:  #ffdbdf;
+  --red_50:   #ffebed;
+
+  /* Yellow / warning */
+  --yellow_1000: #743d00;
+  --yellow_800:  #ab5600;
+  --yellow_500:  #ffaa18;
+  --yellow_300:  #ffcc74;
+  --yellow_100:  #ffe6b9;
+  --yellow_50:   #fff1d8;
+
+  /* Orange */
+  --orange_1000: #692806;
+  --orange_800:  #bb4506;
+  --orange_500:  #fa742d;
+  --orange_300:  #fcb38b;
+  --orange_100:  #fdd9c5;
+  --orange_50:   #feeadf;
+
+  /* Purple */
+  --purple_1000: #37108e;
+  --purple_800:  #6739cd;
+  --purple_500:  #8555f2;
+  --purple_300:  #cbb5ff;
+  --purple_100:  #e5daff;
+  --purple_50:   #f0eaff;
+
+  /* Pink */
+  --pink_1000: #690f38;
+  --pink_800:  #b01d63;
+  --pink_500:  #d33881;
+  --pink_300:  #ffa6d0;
+  --pink_100:  #ffd3e7;
+  --pink_50:   #ffe6f2;
+
+  /* Blue (accent) */
+  --blue_1000: #06405f;
+  --blue_800:  #0071af;
+  --blue_500:  #219ada;
+  --blue_300:  #78cdfb;
+  --blue_100:  #bbe6fd;
+  --blue_50:   #d9f1fe;
+
+  /* Fog — muted slate-blue. Used for neutral informers, secondary ui. */
+  --fog_1000: #253447;
+  --fog_800:  #476385;
+  --fog_500:  #53749d;
+  --fog_300:  #aec0d7;
+  --fog_100:  #d7dfeb;
+  --fog_50:   #e8edf4;
+
+  /* Shading — translucent accent fills, used under informer / chips. */
+  --brand_shading:  rgba(146, 192, 255, 0.28);
+  --yellow_shading: rgba(255, 204, 116, 0.28);
+  --orange_shading: rgba(252, 179, 139, 0.28);
+  --red_shading:    rgba(255, 184, 191, 0.28);
+  --green_shading:  rgba(137, 217, 154, 0.28);
+  --blue_shading:   rgba(120, 205, 251, 0.28);
+  --purple_shading: rgba(203, 181, 255, 0.28);
+  --pink_shading:   rgba(255, 166, 208, 0.28);
+  --fog_shading:    rgba(174, 192, 215, 0.28);
+
+  /* Dark muted — used for vector outlines on Sticker / Sticker Text in dark mode.
+     Each accent maps to its 1000 (darkest, most muted) step. */
+  --brand_dark_muted:  var(--brand_primary_1000);
+  --yellow_dark_muted: var(--yellow_1000);
+  --red_dark_muted:    var(--red_1000);
+  --green_dark_muted:  var(--green_1000);
+  --pink_dark_muted:   var(--pink_1000);
+  --purple_dark_muted: var(--purple_1000);
+  --blue_dark_muted:   var(--blue_1000);
+  --orange_dark_muted: var(--orange_1000);
+  --fog_dark_muted:    var(--fog_1000);
+
+  /* ── Identity gradients ── */
+  /* “Ещё” / More — signature pink→violet→blue brand gradient. */
+  --more_pink: #ffb8d7;
+  --more_blue: #9ad3ff;
+  --more_gradient_pinkvioletblue: linear-gradient(90deg, #ffb8d7 0%, #dfcdff 50%, #9ad3ff 100%);
+  --more_gradient_pinkvioletblue_dim: linear-gradient(90deg, #e5a1be 0%, #cfb9f5 50%, #82c0f0 100%);
+
+  --lilac_gradient: linear-gradient(246deg, #91a2ff 15%, #9f87ff 85%);
+  --green_gradient: linear-gradient(90deg, #59c979 0%, #92cf48 100%);
+  --blue_gradient:  linear-gradient(90deg, #18bde7 0%, #5ed1eb 62%);
+
+  /* ── Shadows (elevation) ── */
+  --shadow_xs: 0 1px 4px  rgba(0, 0, 0, 0.06);
+  --shadow_s:  0 4px 8px  rgba(0, 0, 0, 0.06);
+  --shadow_m:  0 8px 16px rgba(0, 0, 0, 0.08);
+  --shadow_l:  0 12px 24px rgba(0, 0, 0, 0.10);
+
+  /* ── Corner radii ──  (from Figma Corner-radiuses frame) */
+  --radius_xs:  4px;   /* tags, chips */
+  --radius_s:   8px;   /* inputs, small cards */
+  --radius_m:   12px;  /* buttons, medium cards */
+  --radius_l:   16px;  /* cards */
+  --radius_xl:  20px;  /* hero cards, sheets */
+  --radius_2xl: 24px;
+  --radius_3xl: 32px;
+  --radius_pill: 999px;
+
+  /* ── Spacing (4px base) ── */
+  --space_2:  2px;
+  --space_4:  4px;
+  --space_6:  6px;
+  --space_8:  8px;
+  --space_12: 12px;
+  --space_16: 16px;
+  --space_20: 20px;
+  --space_24: 24px;
+  --space_32: 32px;
+  --space_40: 40px;
+  --space_48: 48px;
+  --space_64: 64px;
+  --space_80: 80px;
+
+  /* ── Semantic pairs (light) ── */
+  --screen_bg:              var(--white);
+  --screen_gray_bg:         var(--ink_50);
+  --screen_brand_bg:        var(--brand_primary_500);
+
+  --card_on_screen:         var(--white);
+  --card_gray_on_screen:    var(--ink_25);
+  --card_on_modal:          var(--white);
+
+  --text_primary:           var(--ink_800);
+  --text_secondary:         var(--ink_500);
+  --text_tertiary:          var(--ink_400);
+  --text_disabled:          var(--ink_300);
+  --text_on_bright:         var(--white);
+  --text_on_bright_secondary: var(--white_alpha_72);
+  --text_brand:             var(--brand_primary_800);
+  --text_price:             var(--brand_primary_800);
+  --text_danger:            var(--red_800);
+  --text_positive:          var(--green_800);
+  --text_warning:           var(--yellow_800);
+  --text_link:              var(--brand_primary_800);
+
+  --icon_default:           var(--ink_400);
+  --icon_on_grey:           var(--ink_500);
+  --icon_brand:             var(--brand_primary_500);
+  --icon_dark:              var(--ink_800);
+  --icon_on_bright:         var(--white);
+
+  --line_default:           var(--ink_150);
+  --line_no_text:           var(--ink_300);
+  --line_brand:             var(--brand_primary_500);
+  --line_error:             var(--red_500);
+
+  --component_bg_primary:   var(--white);
+  --component_bg_secondary: var(--black_alpha_8);
+  --component_bg_brand:     var(--brand_primary_500);
+  --component_bg_brand_secondary: var(--brand_primary_25);
+  --component_bg_nav:       var(--white);
+  --component_bg_selected:  var(--ink_50);
+  --component_bg_elevated_inversed: var(--black_alpha_95);
+
+  /* Card infomer tints */
+  --card_info_brand:   var(--brand_shading);
+  --card_info_green:   var(--green_shading);
+  --card_info_red:     var(--red_shading);
+  --card_info_yellow:  var(--yellow_shading);
+  --card_info_orange:  var(--orange_shading);
+  --card_info_purple:  var(--purple_shading);
+  --card_info_pink:    var(--pink_shading);
+  --card_info_blue:    var(--blue_shading);
+  --card_info_fog:     var(--fog_shading);
+}
+
+/* ── Dark mode (.night) ── */
+.night,
+.--night {
+  --brand_primary_800: #205bd9;
+  --brand_primary_500: #1781f3;
+  --brand_primary_300: #74b2f5;
+  --brand_primary_100: #dcebfb;
+  --brand_primary_50:  #ecf4fe;
+
+  --screen_bg:           var(--graphite_900);
+  --screen_gray_bg:      var(--graphite_900);
+  --card_on_screen:      var(--graphite_800);
+  --card_gray_on_screen: var(--graphite_800);
+  --card_on_modal:       var(--graphite_600);
+
+  --text_primary:   var(--graphite_50);
+  --text_secondary: var(--graphite_300);
+  --text_tertiary:  var(--graphite_300);
+  --text_disabled:  var(--graphite_400);
+  --text_brand:     var(--brand_primary_500);
+  --text_price:     var(--graphite_50);
+  --text_danger:    #f66a78;
+  --text_positive:  #4ec165;
+  --text_warning:   #faaf2e;
+  --text_link:      var(--brand_primary_500);
+
+  --icon_default: var(--graphite_300);
+  --icon_on_grey: var(--graphite_300);
+  --icon_dark:    var(--graphite_50);
+
+  --line_default:  var(--graphite_400);
+  --line_no_text:  var(--graphite_300);
+
+  --component_bg_primary:   var(--graphite_500);
+  --component_bg_secondary: var(--white_alpha_12);
+  --component_bg_nav:       var(--graphite_700);
+  --component_bg_selected:  var(--graphite_400);
+}
+
+
+/* ============ TYPE ============ */
+
+:root {
+  /* Font stacks — Apple system face (now self-hosted as SF Pro Display), then Inter, then Roboto/system. */
+  --font-text:  -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Roboto', system-ui, sans-serif;
+  --font-brand: 'Stapel', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  --font-brand-narrow: 'Stapel Narrow', 'Stapel', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+
+  /* Type scale (web) — mirrors Figma /Typography/Web frame.
+     Pattern: size / line-height / weight.
+     The Figma file keeps 2-3 variants per size (regular/semibold/bold) —
+     selectors below expose them as compact utility classes. */
+}
+
+html, body {
+  font-family: var(--font-text);
+  color: var(--text_primary);
+  background: var(--screen_bg);
+  font-feature-settings: "ss01", "cv01"; /* Inter stylistic set for single-story a */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Brand / display — Stapel. Hero numerals, price tags, splash titles. */
+.text-brand-hero    { font-family: var(--font-brand); font-weight: 800; font-size: 64px; line-height: 64px; letter-spacing: -0.02em; }
+.text-brand-xl      { font-family: var(--font-brand); font-weight: 700; font-size: 34px; line-height: 38px; letter-spacing: -0.01em; }
+.text-brand-l       { font-family: var(--font-brand); font-weight: 700; font-size: 26px; line-height: 30px; }
+.text-brand-m       { font-family: var(--font-brand); font-weight: 700; font-size: 23px; line-height: 28px; }
+.text-brand-s       { font-family: var(--font-brand); font-weight: 700; font-size: 19px; line-height: 24px; }
+
+/* Headings / text — Inter. */
+.text-h1 { font-weight: 700; font-size: 34px; line-height: 40px; letter-spacing: -0.01em; }
+.text-h2 { font-weight: 700; font-size: 26px; line-height: 32px; letter-spacing: -0.005em; }
+.text-h3 { font-weight: 700; font-size: 23px; line-height: 28px; }
+.text-h4 { font-weight: 700; font-size: 19px; line-height: 24px; }
+.text-h5 { font-weight: 700; font-size: 17px; line-height: 22px; }
+
+.text-body-l        { font-weight: 400; font-size: 17px; line-height: 24px; }
+.text-body-l-bold   { font-weight: 600; font-size: 17px; line-height: 24px; }
+.text-body-m        { font-weight: 400; font-size: 15px; line-height: 20px; }
+.text-body-m-bold   { font-weight: 600; font-size: 15px; line-height: 20px; }
+.text-body-s        { font-weight: 400; font-size: 13px; line-height: 18px; }
+.text-body-s-bold   { font-weight: 600; font-size: 13px; line-height: 18px; }
+.text-caption       { font-weight: 400; font-size: 11px; line-height: 14px; letter-spacing: 0.02em; }
+.text-caption-bold  { font-weight: 600; font-size: 11px; line-height: 14px; letter-spacing: 0.02em; }
+
+/* Semantic color utilities */
+.text-primary   { color: var(--text_primary); }
+.text-secondary { color: var(--text_secondary); }
+.text-tertiary  { color: var(--text_tertiary); }
+.text-brand     { color: var(--text_brand); }
+.text-danger    { color: var(--text_danger); }
+.text-positive  { color: var(--text_positive); }
+.text-warning   { color: var(--text_warning); }
+.text-price     { color: var(--text_price); }
+.text-on-bright { color: var(--text_on_bright); }
